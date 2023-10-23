@@ -1,4 +1,7 @@
 public class StringBuilder {
+    public StringBuilder(String string) {
+    }
+
     public static void main (String args[])
     {
         StringBuffer sb = new StringBuffer();
@@ -9,7 +12,9 @@ public class StringBuilder {
         System.out.println(sb);
     }
 
-    public void append(char c) {
+    public void append(char curr) {
     }
+
+    
 }
 

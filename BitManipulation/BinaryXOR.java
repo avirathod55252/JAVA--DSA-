@@ -5,7 +5,7 @@ public class BinaryXOR {
 
         int a = 8; // 101
         int b = 20;//  110
-        // a^b  =     011  ans = 3
+        // a^b  = 011  ans = 3
         int arr[]= new int [b];
         int sumxor=0;
         int max = 0;

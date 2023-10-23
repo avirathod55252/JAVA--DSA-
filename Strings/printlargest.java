@@ -12,7 +12,7 @@ public class printlargest {
         //     }
         // }
         // System.out.print(largest);
-        String fruit []= { "apple", "mango","banana"};
+        String fruit []= { "apple", "mango","banandddda"};
         String largest = fruit[0];
         for (int i=0;i<fruit.length;i++)
         {

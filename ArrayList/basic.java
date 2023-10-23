@@ -51,35 +51,45 @@ public class basic {
         // {
         // System.out.print(lists.get(i));
         // }
-        ArrayList<Integer> list2 = new ArrayList<>();
-        list2.add(1);
-        list2.add(2);
-        list2.add(3);
-        list2.add(4);
-        System.out.println(list2);
-        int element = list2.get(2);
+        // ArrayList<Integer> list2 = new ArrayList<>();
+        // list2.add(1);
+        // list2.add(2);
+        // list2.add(3);
+        // list2.add(4);
+        // System.out.println(list2);
+        // int element = list2.get(2);
 
-        System.out.println(element);
-        list2.remove(2);
+        // System.out.println(element);
+        // list2.remove(2);
 
-        System.out.println(list2);
-        list2.set(2, 10);
+        // System.out.println(list2);
+        // list2.set(2, 10);
 
-        System.out.println(list2);
-        System.out.println(list2.contains(10));
+        // System.out.println(list2);
+        // System.out.println(list2.contains(10));
 
-        list2.add(1, 9);
-        System.out.println(list2);
+        // list2.add(1, 9);
+        // System.out.println(list2);
 
-        list2.size();
+        // list2.size();
         // System.out.println(list2.size());
         // for (int i=0;i<list2.size();i++)
         // {
         // System.out.println(list2.get(i));
         // }
-        for (int i = list2.size() - 1; i >= 0; i--) {
-            System.out.print(list2.get(i));
+        // for (int i = list2.size() - 1; i >= 0; i--) {
+        //     System.out.print(list2.get(i));
+        // }
+        ArrayList<Integer> l = new ArrayList<>();
+        l.add(3);
+        l.add(4);
+        l.add(5);
+        
+        for (int i = 0; i < l.size(); i++) {
+            System.out.print(l.get(i));
         }
+        
+
 
     }
 }

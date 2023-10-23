@@ -10,6 +10,7 @@ class climbingstaris {
     }
 
     public static void main(String args[]) {
-        System.out.println(stairs(4));
+       int n = 4;
+       System.out.println(stairs(n));
     }
 }

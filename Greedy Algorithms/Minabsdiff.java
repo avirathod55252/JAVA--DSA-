@@ -13,5 +13,12 @@ class Minabsdiff {
             x += Math.abs(a[i] - b[i]);
         }
         System.out.println(x);
+        Scanner sc = new Scanner (System.in);
+        int number = sc.nextInt();
+        System.out.println(number);
+        
+        System.out.println();
+
+
     }
 }
