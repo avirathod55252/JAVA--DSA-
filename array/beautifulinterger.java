@@ -2,8 +2,7 @@ public class beautifulinterger {
     public static int numberOfBeautifulIntegers(int low, int high, int k) {
 
         int i = 0, count = 0;
-        while (low<high)
-        {
+        while (low < high) {
             if (low % k == 0) {
                 int x = low / 10;
                 int y = low / 10;
@@ -11,6 +10,7 @@ public class beautifulinterger {
                     count++;
                 }
             }
+
         }
         return count;
 

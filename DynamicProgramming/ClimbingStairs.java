@@ -19,7 +19,7 @@ public class ClimbingStairs {
     }
 
     public static void main(String args[]) {
-        int n = 4;
+        int n = 3;
         int ways[] = new int[n + 1];
         Arrays.fill(ways, -1);
         System.out.println(countways(n, ways));

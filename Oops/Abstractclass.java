@@ -5,20 +5,21 @@ public class Abstractclass {
 
         Mustang m = new Mustang();
 
-        // horse h = new horse();
-        // h.eat();
-        // h.walk();
-        // System.out.println(h.color);
-        // chiken c = new chiken();
-        // c.eat();
-        // c.walk();
+        horse h = new horse();
+        h.eat();
+        h.walk();
+        System.out.println(h.color);
+        chiken c = new chiken();
+        c.eat();
+        c.walk();
+
     }
 }
 
 abstract class Animal {
     String color;
 
-    void eat() {
+    void eat() { // can have non-abstract method
         System.out.println("eats");
     }
 
@@ -34,7 +35,7 @@ class horse extends Animal {
         System.out.println("walk 4 legs");
     }
 
-     horse() {
+    horse() {
         System.out.println(" horse constructor is called ");
     }
 }
@@ -48,5 +49,12 @@ class Mustang extends horse {
 class chiken extends Animal {
     void walk() {
         System.out.println("walk 2 legs ");
+    }
+}
+
+class boat extends Animal {
+
+    void walk() {
+        System.out.println("boat ");
     }
 }

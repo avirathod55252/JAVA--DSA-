@@ -4,6 +4,8 @@ public class methodoverriding {
     public static void main(String args[]) {
 
         deer d = new deer();
+        Animal a = new Animal();
+        a.eat();
         d.eat();
     }
 }

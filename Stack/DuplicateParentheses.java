@@ -9,11 +9,12 @@ class DuplicateParentheses {
             if (ch == ')') {
                 int count = 0;
                 while (s.pop() != '(') {
+
                     count++;
                 }
                 if (count < 1) {
                     return true;
-                }
+                } 
 
             } else {
                 s.push(ch);

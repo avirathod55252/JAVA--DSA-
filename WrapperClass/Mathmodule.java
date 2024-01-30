@@ -9,10 +9,10 @@ public class Mathmodule {
         System.out.println(Math.abs(-3.5));
         System.out.println(Math.sqrt(16));
         System.out.println(Math.pow(2, 3));
-        System.out.println ((int)Math.random());
+        System.out.println((int) Math.random());
 
-        // double x = Math.floor(3.2);
-        // System.out.println(x);
+        double x = Math.floor(3.2);
+        System.out.println(x);
     }
 
 }
