@@ -27,8 +27,19 @@ public class StartWithPb {
     curr.eow = true;
   }
 
-  public static void startWithProblem(String s) {
+  public static boolean startWithProblem(String s) {
 
+    Node curr = root;
+    for (int i = 0; i < s.length(); i++) {
+
+      int idx = s.charAt(i) - 'a';
+      if (curr.children[idx] == null) {
+
+        return false;
+      }
+      curr = curr.children[idx];
+    }
+    return true;
   }
 
   public static void main(String args[]) {
@@ -37,6 +48,11 @@ public class StartWithPb {
 
     String prefix1 = "app";
     String prefix2 = "moon";
+    for (int i = 0; i < word.length; i++) {
+      insert(word[i]);
+    }
 
+    System.out.println(startWithProblem(prefix2));
+    System.out.println(startWithProblem(prefix1));
   }
 }
