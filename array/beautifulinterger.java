@@ -19,5 +19,8 @@ public class beautifulinterger {
     public static void main(String args[]) {
         int low = 10, high = 20, k = 3;
         System.out.print(numberOfBeautifulIntegers(low, high, k));
+
+        int x = 7-- 2;
+        System.out.println(x);
     }
 }

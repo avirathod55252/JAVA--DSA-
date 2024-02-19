@@ -28,15 +28,30 @@ public class UniqueSubstring {
     curr.eow = true;
   }
 
-  public static int countOfNodes(Node root) {
+  // public static int countOfNodes(Node root) {
 
-    if (root == null) {
+  // if (root == null) {
+  // return 0;
+  // }
+  // int count = 0;
+  // for (int i = 0; i < 26; i++) {
+  // if (root.children[i] != null) {
+  // count += countOfNodes(root.children[i]);
+  // }
+  // }
+  // return count + 1;
+
+  // }
+  public static int countOfNodes(Node root) {
+    Node curr = root;
+    if (curr == null) {
       return 0;
     }
     int count = 0;
     for (int i = 0; i < 26; i++) {
-      if (root.children[i] != null) {
-        count += countOfNodes(root.children[i]);
+
+      if (curr.children[i] != null) {
+        count += countOfNodes(curr.children[i]);
       }
     }
     return count + 1;
@@ -48,8 +63,9 @@ public class UniqueSubstring {
     String str = "ababa";
     String str2 = "apple";
 
-    for (int i = 0; i < str2.length(); i++) {
-      String suffix = str2.substring(i);
+    //
+    for (int i = 0; i < str.length(); i++) {
+      String suffix = str.substring(i);
       insert(suffix);
     }
     System.out.println(countOfNodes(root));

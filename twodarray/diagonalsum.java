@@ -6,7 +6,7 @@ public class diagonalsum {
             sum += arr[i][i];
             sum2 += arr[i][arr.length - 1 - i];
         }
-        return sum - sum2;  
+        return sum - sum2;
     }
 
     public static void main(String args[]) {

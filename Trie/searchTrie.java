@@ -28,20 +28,24 @@ public class searchTrie {
 
   }
 
-  public static boolean search(String k) {
+  public static int search(String k) {
     Node curr = root;
+    int count = 0;
     for (int l = 0; l < k.length(); l++) {
       int idx = k.charAt(l) - 'a';
       if (curr.children[idx] == null) {
-        return false;
+        return -1;
       }
       curr = curr.children[idx];
+      count++;
     }
-    return curr.eow = true;
+    return count;
   }
 
   public static void main(String args[]) {
-    String Words[] = { "thee", "the", "there", "any", "thier" };
+    // String Words[] = { "thee", "the", "there", "any", "thier" };
+    String Words[] = { "hacker", "int", "nitint", "hackhackerer", "long " };
+
     for (int i = 0; i < Words.length; i++) {
       insert(Words[i]);
     }
@@ -51,8 +55,8 @@ public class searchTrie {
     // }
     // // search trie:
 
-    System.out.println(search("thee"));
-    System.out.println(search("then"));
+    System.out.println(search("hacker"));
+    System.out.println(search("int"));
 
   }
 }

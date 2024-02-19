@@ -48,11 +48,14 @@ import java.util.*;
 class searchkey2d {
 
     public static int largest(int nums[][]) {
-        int large = Integer.MAX_VALUE;
+        int matrix[][] = new int[nums.length][nums.length];
+        int large = Integer.MIN_VALUE;
         for (int i = 0; i < nums.length; i++) {
             for (int j = 0; j < nums.length; j++) {
-                if (large > nums[i][j]) {
-                    large = nums[i][j];
+                if (nums[j][i] == -1) {
+                    if (large < nums[j][i]) {
+                        large = nums[j][i];
+                    }
                 }
             }
         }
@@ -60,22 +63,39 @@ class searchkey2d {
     }
 
     public static void main(String args[]) {
-        int arr[][] = new int[3][3];
-        int n = arr.length;
-        int m = arr[0].length;
-        Scanner sc = new Scanner(System.in);
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                arr[i][j] = sc.nextInt();
-            }
-        }
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                System.out.print(arr[i][j] + " ");
+        // int arr[][] = new int[3][3];
+        int arr[][] = { { 1, 2, -1 }, { 4, -1, 6 }, { 7, 8, 9 } };
+
+        // int n = arr.length;
+        // int m = arr[0].length;
+        // Scanner sc = new Scanner(System.in);
+        // for (int i = 0; i < n; i++) {
+        // for (int j = 0; j < m; j++) {
+        // arr[i][j] = sc.nextInt();
+        // }
+        // }
+        // for (int i = 0; i < n; i++) {
+        // for (int j = 0; j < m; j++) {
+        // System.out.print(arr[i][j] + " ");
+        // }
+        // System.out.println();
+        // }
+        System.out.print(largest(arr));
+        // int largest = largest(arr);
+        // for (int i = 0; i < arr.length; i++) {
+        // for (int j = 0; j < arr.length; j++) {
+        // if (arr[j][i] == -1) {
+        // arr[j][i] = largest;
+        // }
+        // }
+        // }
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length; j++) {
+                System.out.print(arr[i][j]);
             }
             System.out.println();
         }
-        System.out.print(largest(arr));
-    }
 
+    }
 }
+//

@@ -12,7 +12,8 @@ public class xtothepowern {
 
     public static void main(String args[]) {
         int x = 2;
-        int n = 5;
+        int n = 2;
         System.out.print(xpown(x, n));
+        // System.out.print(Math.pow(2, 3));
     }
 }
