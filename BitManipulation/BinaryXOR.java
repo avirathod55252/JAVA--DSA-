@@ -13,6 +13,5 @@ public class BinaryXOR {
             max = Math.max(sumxor, max);
         }
         System.out.println(max);
-
     }
 }

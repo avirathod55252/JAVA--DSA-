@@ -8,12 +8,12 @@ class friendpairing {
 
         int pairways = (n - 1) * fnm2;
         int totways = pairways + fnm1;
-        
         return totways;
+        // return pair(n - 1) + pair(n - 1) * pair(n - 2);
     }
 
     public static void main(String args[]) {
-        int n = 3;
+        int n = 5;
         System.out.print(pair(n));
 
     }

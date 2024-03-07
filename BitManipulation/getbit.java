@@ -1,6 +1,6 @@
 public class getbit {
     public static int getitbit(int n, int i) {
-        int bitmask = 1<<i;
+        int bitmask = 1 << i;
         if ((n & bitmask) == 0) {
             return 0;
         } else {
@@ -11,6 +11,6 @@ public class getbit {
 
     public static void main(String args[]) {
 
-        System.out.println(getitbit(10, 2));
+        System.out.println(getitbit(1, 12));
     }
 }

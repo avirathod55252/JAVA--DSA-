@@ -5,6 +5,6 @@ class clearbit {
     }
 
     public static void main(String args[]) {
-        System.out.println(clearithbit(10, 2));
+        System.out.println(clearithbit(7, 0));
     }
 }
